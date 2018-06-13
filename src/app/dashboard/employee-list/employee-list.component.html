@@ -1,0 +1,11 @@
+<mat-accordion multi="true" *ngIf="employees.length > 0">
+  <mat-expansion-panel *ngFor="let emp of employees">
+    <mat-expansion-panel-header>
+      {{ emp.name }}
+    </mat-expansion-panel-header>
+    <p>{{ emp.phone }}</p>
+    <p>{{ emp.email }}</p>
+    <p>{{ emp.city }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="employees.length <= 0">No employee added yet!</p>

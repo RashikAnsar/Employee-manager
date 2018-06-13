@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>Add Employee</mat-card-title>
+  <hr />
+  <form #myForm="ngForm" (submit)="onSubmit(myForm)">
+    <mat-form-field>
+      <input type="text" matInput ngModel name="name" placeholder="Name" #nameInput="ngModel" required>
+      <mat-error *ngIf="nameInput.invalid">Please enter a your name</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="email" matInput ngModel name="email" placeholder="E-mail" #emailInput="ngModel" required email>
+      <mat-error *ngIf="emailInput.invalid">Please enter a valid email</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="number" ngModel matInput name="phone" placeholder="Phone" #phoneInput="ngModel" required minlength="10" maxlength="12">
+      <mat-error *ngIf="phoneInput.invalid">Please enter a valid phone number</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" ngModel matInput name="city" placeholder="City" #cityInput="ngModel" required>
+      <mat-error *ngIf="cityInput.invalid">Please enter a your city</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" [disabled]="myForm.invalid">Submit</button>
+  </form>
+</mat-card>

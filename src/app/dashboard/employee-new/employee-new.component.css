@@ -1,0 +1,26 @@
+mat-form-field {
+  width: 90%;
+}
+
+mat-card {
+  background: transparent;
+  color: rgba(0,0,0,.87);
+  border-radius: 10px;
+  width: 50%;
+}
+
+mat-card-title{
+  text-align: center;
+  color: blueviolet;
+}
+
+mat-card button {
+  margin: auto;
+}
+
+
+@media (min-width: 480px){
+  mat-card {
+    width: 80%;
+  }
+}

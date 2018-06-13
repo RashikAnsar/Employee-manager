@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100vw;
+  height:2%vh;
+  background:#6cf;
+}
