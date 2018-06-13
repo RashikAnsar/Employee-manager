@@ -1,27 +1,50 @@
-# HealthVings
+Employee manager
+======================================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+> This app buit using Angular, Node/Express and MongoDB.
 
-## Development server
+Prerequisites
+-------------
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [MongoDB](https://www.mongodb.org/downloads)
+- [Node.js](http://nodejs.org)
+- [AngularCli](https://cli.angular.io/)
 
-## Code scaffolding
+List of Packages
+----------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Package                   | Description                                     |
+| ------------------------- | ----------------------------------------------- |
+| Angular                   | FrontEnd Framework                              |
+| Angular Material          | FrontEnd-UI Framework                           |
+| Angular-Particel          | Particles of UI Component                       |
+| bcrypt                    | Library for hashing and salting user passwords. |
+| body-parser               | Node.js body parsing middleware.                |
+| http-errors               | Development-only error handler middleware.      |
+| express                   | Node.js web framework.                          |
+| jsonwebtoken              | Authentication tokens.                          |
+| mongoose                  | MongoDB ODM.                                    |
+| morgan                    | HTTP request logger middleware for node.js.     |
+| mongoose-unique-validator | unique-validator plugin                         |
+|
 
-## Build
+ 
+Getting Started
+---------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The easiest way to get started is to clone the repository:
 
-## Running unit tests
+```bash
+# Get the latest snapshot
+clone or download the project
+myproject
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Change directory
+cd myproject
 
-## Running end-to-end tests
+# Install NPM dependencies
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Then simply start your app
+npm run myapp
+```
