@@ -45,6 +45,9 @@ cd myproject
 # Install NPM dependencies
 npm install
 
+# Start mongoDB server
+mongod
+
 # Then simply start your app
 npm run myapp
 ```
